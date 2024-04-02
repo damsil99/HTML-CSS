@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/fondo.jpeg');
+    background-color: #4885ed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.header-container {
+    background-image: url('images/vacaciones.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    padding: 20px 0;
+}
+
+h3 {
+    margin: 0;
+    color: #e98400;
+    font-size: 30px;
+    padding: 20px 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.destinations-box {
+    flex: 70%;
+}
+
+#about-us {
+    flex: 15%;
+}
+
+.box-wrapper > * {
+    flex-grow: 1;
+}
+
+.destinations-box,
+#about-us {
+    background-color: rgba(255, 246, 231, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-us-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination-item {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: calc(50% - 10px);
+}
+
+.destination-item:hover {
+    transform: scale(1.1);
+}
+
+.destination-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination-item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.destination-item:hover h3 {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
